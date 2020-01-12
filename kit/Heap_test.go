@@ -11,7 +11,7 @@ import (
 func Test_intHeap(t *testing.T) {
 	ast := assert.New(t)
 
-	ih := new(intHeap)
+	ih := &intHeap{2,7,26,25,19,17,1,90,3,36}
 	heap.Init(ih)
 
 	heap.Push(ih, 1)

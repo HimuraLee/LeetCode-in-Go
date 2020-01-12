@@ -8,7 +8,7 @@ func (h intHeap) Len() int {
 }
 
 func (h intHeap) Less(i, j int) bool {
-	return h[i] < h[j]
+	return h[i] > h[j]
 }
 
 func (h intHeap) Swap(i, j int) {
